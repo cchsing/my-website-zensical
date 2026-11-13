@@ -1,18 +1,32 @@
 [project]
-# site_url = "https://www.example.com/"
+site_url = "https://cchsing.github.io/my-website-zensical/"
 site_name = "My Website"
 # site_description = "Your project description"
 site_author = "Justin Chong"
 
-# copyright = "Copyright &copy; 2026 Your name"
+copyright = "Copyright &copy; 2026 Justin Chong"
 
-# repo_url = "https://github.com/user/repo"
-# repo_name = "user/repo"
+repo_url = "https://github.com/cchsing/my-website-zensical"
+repo_name = "cchsing/my-website-zensical"
 # edit_uri = "edit/main/docs/"
 
 nav = [
-  { "Get started" = "index.md" },
-  { "Markdown in 5min" = "markdown.md" },
+  { "Overview" = [
+      "index.md",
+      "contact.md",
+      { "About" = [
+          "about/career.md",
+          "about/education.md",
+          "about/skills.md",
+        ]},
+      ]},
+  { "Projects" = [ 
+      "projects/index.md"
+    ]},
+  { "Solutions" = [
+
+    ]},
+  { "Blog" = ["blog/index.md"] },
 ]
 
 # extra_css = ["stylesheets/extra.css"]
@@ -34,17 +48,17 @@ features = [
   "content.tabs.link",
   "content.tooltips",
   # "header.autohide",
-  # "navigation.expand",
+  "navigation.expand",
   "navigation.footer",
-  "navigation.indexes",
+  # "navigation.indexes",
   "navigation.instant",
   "navigation.instant.prefetch",
   # "navigation.instant.progress",
   "navigation.path",
   # "navigation.prune",
   "navigation.sections",
-  # "navigation.tabs",
-  # "navigation.tabs.sticky",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
   "navigation.top",
   "navigation.tracking",
   "search.highlight",
@@ -116,3 +130,11 @@ pymdownx.tabbed.alternate_style = true
 pymdownx.tabbed.combine_header_slug = true
 pymdownx.tasklist.custom_checkbox = true
 pymdownx.tilde = {}
+
+[project.plugins.blog]
+authors = true
+authors_profiles = true
+blog_toc = true
+
+[project.plugins.search]
+enabled = true
