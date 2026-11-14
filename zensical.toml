@@ -11,7 +11,7 @@ repo_name = "cchsing/my-website-zensical"
 # edit_uri = "edit/main/docs/"
 
 nav = [
-  { "Overview" = [
+  { "General" = [
       "index.md",
       "contact.md",
       { "About" = [
@@ -24,7 +24,7 @@ nav = [
       "projects/index.md"
     ]},
   { "Solutions" = [
-
+      "solutions/index.md"
     ]},
   { "Blog" = ["blog/index.md"] },
 ]
@@ -53,9 +53,9 @@ features = [
   # "navigation.indexes",
   "navigation.instant",
   "navigation.instant.prefetch",
-  # "navigation.instant.progress",
+  "navigation.instant.progress",
   "navigation.path",
-  # "navigation.prune",
+  "navigation.prune",
   "navigation.sections",
   "navigation.tabs",
   "navigation.tabs.sticky",
@@ -130,6 +130,8 @@ pymdownx.tabbed.alternate_style = true
 pymdownx.tabbed.combine_header_slug = true
 pymdownx.tasklist.custom_checkbox = true
 pymdownx.tilde = {}
+
+[project.markdown_extensions.zensical.extensions.glightbox]
 
 [project.plugins.blog]
 authors = true

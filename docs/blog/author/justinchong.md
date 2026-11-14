@@ -11,9 +11,6 @@ Hi! I'm **Justin**, a technical writer based in Kuala Lumpur. I write about docu
 
 When I'm not writing docs, you can find me contributing to Python projects or exploring local coffee shops.
 
-- **GitHub:** [@cchsing](https://github.com/cchsing)
-- **LinkedIn:** [Justin Chong](https://linkedin.com/in/chchong5679)
-
 ---
 
 ## Posts by Justin
